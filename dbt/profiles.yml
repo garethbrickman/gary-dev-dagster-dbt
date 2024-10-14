@@ -1,0 +1,9 @@
+ndr:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: "test.duckdb" # Path to your DuckDB database file
+      threads: 24
+      database: test # Must match the DuckDB filename without '.duckdb'
+      schema: main # Default schema in DuckDB
